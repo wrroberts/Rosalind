@@ -15,3 +15,6 @@ seq = open('rosalind_rna.txt','r')
 seq = seq.read()
 
 print(seq.replace('T','U'))
+
+with open('002_RNA_output.txt', 'w') as output_data:
+        output_data.write(print (seq.replace('T','U'))
