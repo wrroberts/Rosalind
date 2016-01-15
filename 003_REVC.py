@@ -26,3 +26,5 @@ st = seq.read()
 st = st.replace('A','t').replace('T','a').replace('C','g').replace('G','c').upper()[::-1]
 print st
 
+with open('003_REVC_output.txt', 'w') as output_data:
+        output_data.write(st)
