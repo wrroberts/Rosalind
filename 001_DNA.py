@@ -58,3 +58,4 @@ seq = open('rosalind_dna.txt','r')
 seq = seq.read()
 c = Counter(seq)
 print c['A'], c['C'], c['G'], c['T']
+
