@@ -61,4 +61,3 @@ print c['A'], c['C'], c['G'], c['T']
 
 with open('001_DNA_output.txt','w') as output_data:
     output_data.write(print c['A'], c['C'], c['G'], c['T'])
-
