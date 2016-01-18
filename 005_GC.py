@@ -10,7 +10,7 @@ URL: http://rosalind.info/problems/gc/
 
 '''First Option'''
 
-inputFile = open('rosalind_gc-1.txt','r')
+inputFile = open('rosalind_gc.txt','r')
 max_label = ""
 max_gc = 0
 
@@ -50,7 +50,7 @@ from Bio import SeqIO
 from Bio.SeqUtils import GC
 GCcont = 0
 GCname = ""
-file = open("rosalind_GC.txt", "r")
+file = open("rosalind_gc.txt", "r")
 for record in SeqIO.parse(file, "fasta"):
     if GCcont < GC(record.seq):
         GCcont = GC(record.seq)
@@ -61,7 +61,7 @@ print round(GCcont,2), "%"
 
 '''Third Option'''
 
-for seq_record in SeqIO.parse('rosalind_gc-1.txt','fasta'):
+for seq_record in SeqIO.parse('rosalind_gc.txt','fasta'):
     A = seq_record.seq.count('A')
     T = seq_record.seq.count('T')
     C = seq_record.seq.count('C')
@@ -83,7 +83,7 @@ def get_best_content(dna_list):
         return best
 
 def read_input():
-        lines = [line[:-1] for line in open("input.txt")]
+        lines = [line[:-1] for line in open("rosalind_gc.txt")]
         dna = {}
         for line in lines:
                 if line[0] == ">":
