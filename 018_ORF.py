@@ -8,10 +8,6 @@ Rosalind #: 018
 URL: http://rosalind.info/problems/orf/
 '''
 
-ReadFAST
-ReverseComplementDNA
-ProteinDictDNA
-
 #ReadFASTA
 import urllib
 import contextlib
