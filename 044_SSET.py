@@ -18,4 +18,3 @@ for i in xrange(n):
 print sset
 with open('output/044_SSET_output.txt','w') as output_data:
 	output_data.write(str(sset))
-
