@@ -8,19 +8,6 @@ Rosalind #: 054
 URL: http://rosalind.info/problems/trie/
 '''
 
-from script import Trie
-
-with open('data/rosalind_trie.txt') as input_data:
-	dna = [line.strip() for line in input_data.readlines()]
-	
-adjacency_list = [edge.get_info() for edge in Trie(dna).edges]
-
-print '\n'.join(adjacency_list)
-with open('output/054_TRIE_output.txt','w') as output_file:
-	output_file.write('\n'.join(adjacency_list))
-	
-# Second Solution
-
 from itertools import count
 
 
