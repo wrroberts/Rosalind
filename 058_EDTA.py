@@ -108,5 +108,5 @@ if __name__ == '__main__':
 	edited = edit_aligned(s,t)
 	
 	print '\n'.join(edited)
-	with open('output/058_EDIT_output.txt','w') as output_data:
+	with open('output/058_EDTA_output.txt','w') as output_data:
 		output_data.write('\n'.join(edited))
